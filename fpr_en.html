@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 	</head>
 	<body>
 
@@ -44,16 +45,634 @@
 					<p>Find the right flight planned route to match the realistic operation in Japan is uneasy. The Auto Route Finder usually messes things up (e.g. cannot connect to SID or STAR, using an unauthorized airway). </p>
 					<p>However, the editors of this website have worked hard comparing information from different sources (e.g. flightaware, flightradar24, and eAIP Japan (AIC 025/20)) to find the <b>most realistic routes</b> for you. To access them, please visit here and use the search option of your browser (Ctrl + F or Command + F):</p>
 					<h5><span style="color:#FF0000;">(Updated June 15th)</span></h5>
+					<table id="fpr" class="display" cellspacing="0" width="100%">
+					<thead><tr><th title="Field #1">DEP</th>
+						<th title="Field #2">ARR</th>
+						<th title="Field #3">Routes</th>
+						<th title="Field #4">Notes</th>
+						</tr></thead>
+						<tbody>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOO</td>
+						<td>LAXAS Y56 TOHME Y54 KOHWA Y546 KODAI</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOO</td>
+						<td>RJTT</td>
+						<td>SHTLE Y71 XAC</td>
+						<td>Consult a dispatcher for early morning or late night route, if possible. </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJBB</td>
+						<td>LAXAS Y56 TOHME Y54 KOHWA Y544 DANDE</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJBB</td>
+						<td>RJTT</td>
+						<td>SHTLE Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJBE</td>
+						<td>NINOX Y28 IPLES Y207 ARASI Y20 WAKIT Y201 TRACY  </td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJBE</td>
+						<td>RJTT</td>
+						<td>SHTLE Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJCC</td>
+						<td>AGRIS Y11 NAVER</td>
+						<td>Consult a dispatcher for early morning or late night route, if possible. </td>
+						</tr>
+						<tr>
+						<td>RJCC</td>
+						<td>RJTT</td>
+						<td>TOBBY Y10 GODIN</td>
+						<td>Consult a dispatcher for early morning or late night route, if possible. </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFF</td>
+						<td>RITLA Y20 KIRIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJFF</td>
+						<td>RJTT</td>
+						<td>YANKS Y235 FLUTE Y23 ARTIC Y71 XAC</td>
+						<td>Consult a dispatcher for early morning or late night route, if possible. </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJGG</td>
+						<td>BEKLA Y18 PIGAP Y88 SUGAL Y881 SLIDE</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJGG</td>
+						<td>RJTT</td>
+						<td>BOGON Y23 ARTIC Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJCW</td>
+						<td>AGRIS Y11 CHE Y10 YOROI</td>
+						<td>Expect AGRIS Y11 CHE Y10 WKE for VOR APCH during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJCW</td>
+						<td>RJTT</td>
+						<td>YOROI Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJEB</td>
+						<td>AGRIS Y11 IBURI Y139 ASIBE Y116 LUBEK</td>
+						<td>Expect ARGIS Y11 IBURI Y139 ASIBE Y116 MVE during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJEB</td>
+						<td>RJTT</td>
+						<td>LUBEK Y116 CHE Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJCM</td>
+						<td>AGRIS Y11 YTE Y111 OZORA</td>
+						<td>Expect AGRIS Y11 YTE Y111 TBE for VOR/ILS APCH for RWY18. Use RNAV(RNP) RWY18 APCH if capable. </td>
+						</tr>
+						<tr>
+						<td>RJCM</td>
+						<td>RJTT</td>
+						<td>NOTAK Y14 MKE Y101 TOBBY Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJEC</td>
+						<td>AGRIS Y11 IBURI Y139 ASIBE</td>
+						<td>Expect ARGIS Y11 IBURI Y139 AWE during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJEC</td>
+						<td>RJTT</td>
+						<td>KAGRA Y103 TOBBY Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJCN</td>
+						<td>AGRIS Y11 YTE Y111 KSE V2 MASHU</td>
+						<td>Expect AGRIS Y11 YTE Y111 KSE V2 NSE  during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJCN</td>
+						<td>RJTT</td>
+						<td>KSE Y111 MQE Y106 RUBIS Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJCK</td>
+						<td>AGRIS Y11 YTE Y111 CRANE</td>
+						<td>Expect AGRIS Y11 YTE Y111 KSE during inclement weather or incapable to do RNAV(RNP) Z RWY17 APCH. </td>
+						</tr>
+						<tr>
+						<td>RJCK</td>
+						<td>RJTT</td>
+						<td>AKESI Y111 MQE Y106 RUBIS Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJCB</td>
+						<td>AGRIS Y11 YTE Y111 ERIMO Y110 TAIKI</td>
+						<td>Expect AGRIS Y11 YTE Y111 ERIMO Y110 OBE  during inclement weather or for VOR RWY17 APCH. </td>
+						</tr>
+						<tr>
+						<td>RJCB</td>
+						<td>RJTT</td>
+						<td>RACKO Y110 ERIMO Y111 MQE Y106 RUBIS Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJCH</td>
+						<td>AGRIS Y11 YTE Y113 HIBAR</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJCH</td>
+						<td>RJTT</td>
+						<td>UWE Y32 RUBIS Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJSR</td>
+						<td>AGRIS Y11 YTE Y32 MAGGY</td>
+						<td>Consult a dispatcher if unavbl for RNAV(RNP) APCH. </td>
+						</tr>
+						<tr>
+						<td>RJSR</td>
+						<td>RJTT</td>
+						<td>UWE Y32 RUBIS Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJSK</td>
+						<td>AGRIS Y11 YTE Y32 CHOKA</td>
+						<td>Expect AGRIS Y11 YTE Y32 UWE during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJSK</td>
+						<td>RJTT</td>
+						<td>YTE Y32 RUBIS Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJSY</td>
+						<td>AGRIS Y11 SHIRO Y115 USUBA</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJSY</td>
+						<td>RJTT</td>
+						<td>ZUNDA Y32 RUBIS Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJNT</td>
+						<td>BEKLA Y885 URUSI</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJNT</td>
+						<td>RJTT</td>
+						<td>HISUI Y31 GENJI Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJNK</td>
+						<td>BEKLA Y884 YARII</td>
+						<td>Expect BEKLA Y884 KMC during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJNK</td>
+						<td>RJTT</td>
+						<td>KCC Y295 GAKKI Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJNW</td>
+						<td>BEKLA Y885 AZUMI V57 HAPPO</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJNW</td>
+						<td>RJTT</td>
+						<td>HISUI Y31 GENJI Y10 GODIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJTH</td>
+						<td>XAC Y588 MOE V18 SANGO</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTH</td>
+						<td>RJTT</td>
+						<td>TOPIT Y875 AROSA</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOB</td>
+						<td>NINOX Y28 IPLES Y207 ARASI Y20 WAKIT Y205 BENES</td>
+						<td>Expect NINOX Y28 IPLES Y207 ARASI Y20 WAKIT Y205 OYE during inclement weather or incapable to do RNAV(RNP) APCH. </td>
+						</tr>
+						<tr>
+						<td>RJOB</td>
+						<td>RJTT</td>
+						<td>SHTLE Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOA</td>
+						<td>RITLA Y20 KAMMY Y202 AMURO</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOA</td>
+						<td>RJTT</td>
+						<td>CUE Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOI</td>
+						<td>NINOX Y28 ONDOC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOI</td>
+						<td>RJTT</td>
+						<td>MALTA Y33 SHOOT Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJDC</td>
+						<td>NINOX Y28 MARCO Y284 KATTA</td>
+						<td>Expect NINOX Y28 MARCO Y284 UBE during inclement weather or when incapable to do RNAV(RNP) APCH. </td>
+						</tr>
+						<tr>
+						<td>RJDC</td>
+						<td>RJTT</td>
+						<td>MYE Y33 SHOOT Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOR</td>
+						<td>BEKLA Y18 YME Y186 TRE</td>
+						<td>Expect BEKLA Y18 YME Y186 KANNA if capable to do RNAV(RNP) RWY28 APCH. </td>
+						</tr>
+						<tr>
+						<td>RJOR</td>
+						<td>RJTT</td>
+						<td>YME Y295 GAKKI Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOH</td>
+						<td>BEKLA Y18 RAKDA</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOH</td>
+						<td>RJTT</td>
+						<td>YME Y295 GAKKI Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOW</td>
+						<td>BEKLA Y18 ORUDA Y143 SAMBA BLUES</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOW</td>
+						<td>RJTT</td>
+						<td>VIBEL Y143 ADLEB Y38 CUE Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOS</td>
+						<td>LAXAS Y56 TOHME Y54 KOHWA Y544 SINGU Y542 DATIS</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOS</td>
+						<td>RJTT</td>
+						<td>KILAP Y43 MENUR Y21 AKSEL</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOT</td>
+						<td>NINOX Y28 IPLES Y207 ARASI Y20 WAKIT Y203 WIMPY</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOT</td>
+						<td>RJTT</td>
+						<td>SHTLE Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOM</td>
+						<td>NINOX Y28 BAMBO Y283 ITUKI</td>
+						<td>Expect NINOX Y28 BAMBO Y283 MYE during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJOM</td>
+						<td>RJTT</td>
+						<td>KRE V37 PADOC Y43 MENUR Y21 AKSEL</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJOK</td>
+						<td>LAXAS Y56 KEC Y24 TURFY Y242 PANCH</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOK</td>
+						<td>RJTT</td>
+						<td>KEC Y43 MENUR Y21 ADDUM</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFR</td>
+						<td>NINOX Y28 MARCO Y285 ASARI</td>
+						<td>Expect NINOX Y28 MARCO Y285 SWE during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJFR</td>
+						<td>RJTT</td>
+						<td>FIATO Y61 KTE Y33 SHOOT Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFS</td>
+						<td>NINOX Y28 BAMBO Y283 MYE Y40 MILEP</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJFS</td>
+						<td>RJTT</td>
+						<td>OOITA Y23 ARTIC Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFO</td>
+						<td>NINOX Y28 MARCO Y45 YANAI</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJFO</td>
+						<td>RJTT</td>
+						<td>FIATO Y61 KTE Y33 SHOOT Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFT</td>
+						<td>NINOX Y28 BAMBO Y283 MYE Y40 KAZMA</td>
+						<td>Expect NINOX Y28 BAMBO Y283 MYE Y40 KAZMA for ILS RWY07, Expect NINOX Y28 BAMBO Y283 MYE Y40 ASONO for RNAV(RNP) RWY25. Expect NINOX Y28 BAMBO Y283 MYE Y40 KUE for VOR APCH during inclement weather. </td>
+						</tr>
+						<tr>
+						<td>RJFT</td>
+						<td>RJTT</td>
+						<td>SPIDE Y23 ARTIC Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFU</td>
+						<td>RITLA Y20 KAMMY Y204 OHGIE</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJFU</td>
+						<td>RJTT</td>
+						<td>OOITA Y23 ARTIC Y71 XAC</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFM</td>
+						<td>LAXAS Y56 TOHME Y54 TURFY Y24 SUC Y402 RYUGU</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJFM</td>
+						<td>RJTT</td>
+						<td>MADOG M750 BILLY Y21 AKSEL</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>RJFK</td>
+						<td>LAXAS Y56 TOHME Y54 TURFY Y24 SUC Y757 JANUS</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJFK</td>
+						<td>RJTT</td>
+						<td>MIDAI M750 BILLY Y21 AKSEL</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>ROAH</td>
+						<td>LAXAS Y56 TOHME Y54 KOHWA Y12 LAXEL Y52 TONAR Y525 IHEYA</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>ROAH</td>
+						<td>RJTT</td>
+						<td>AMAMI Y574 SHIBK Y57 SUKBO Y571 BILLY Y21 AKSEL</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>ROMY</td>
+						<td>LAXAS Y56 TOHME Y54 KOHWA Y12 LAXEL Y52 TONAR Y525 ONC KXC DUFFY SOARA GANAS Y576 YUTAH</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>ROMY</td>
+						<td>RJTT</td>
+						<td>TORII Y577 GEMNI Y57 SUKBO Y571 BILLY Y21 AKSEL</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJTT</td>
+						<td>ROIG</td>
+						<td>LAXAS Y56 TOHME Y54 KOHWA Y12 LAXEL Y52 TONAR Y525 ONC KXC DUFFY SOARA GANAS Y576 IGE</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>ROIG</td>
+						<td>RJTT</td>
+						<td>IKEMA Y57 SUKBO Y571 BILLY Y21 AKSEL</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJOO</td>
+						<td>PIGOK Y50 ELNIS Y564 IBENO Y56 TOHME Y54 KOHWA Y546 KODAI  </td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOO</td>
+						<td>RJAA</td>
+						<td>SHTLE Y79 GUPER Y81 RUTAS </td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJGG</td>
+						<td>PIGOK Y50 OLTOM</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJGG</td>
+						<td>RJAA</td>
+						<td>BOGON Y79 GUPER Y81 RUTAS</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJCC</td>
+						<td>KIMIN Y117 JYONA Y11 NAVER</td>
+						<td>Consult a dispatcher for early morning or late night route, if possible. </td>
+						</tr>
+						<tr>
+						<td>RJCC</td>
+						<td>RJAA</td>
+						<td>TOBBY Y10 LARCH Y302 JUGEM Y30 SWAMP</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJFF</td>
+						<td>ENPAR Y16 TEPEX Y88 SUGAL Y20 KIRIN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJFF</td>
+						<td>RJAA</td>
+						<td>SABAR Y81 RUTAS</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJSS</td>
+						<td>KIMIN Y117 NIRAX Y15 OWLET</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJSS</td>
+						<td>RJAA</td>
+						<td>IXE R211 SWAMP</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJSN</td>
+						<td>AGRIS Y37 GOSEN</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJSN</td>
+						<td>RJAA</td>
+						<td>VIKET Y303 ENTAK Y30 SWAMP</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJNK</td>
+						<td> </td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJNK</td>
+						<td>RJAA</td>
+						<td>GOLDO Y347 GTC Y303 ENTAK Y30 SWAMP</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>RJOA</td>
+						<td>ENPAR Y16 TEPEX Y88 SUGAL Y20 TOLUM Y20 KAMMY Y202 AMURO</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJOA</td>
+						<td>RJAA</td>
+						<td>CUE Y71 SHTLE Y79 GUPER Y81 RUTAS</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>RJAA</td>
+						<td>ROAH</td>
+						<td>SZE Y295 GAKKI Y55 KOHWA Y12 LAXEL Y52 TONAR Y525 IHEYA</td>
+						<td> </td>
+						</tr>
+						<tr>
+						<td>ROAH</td>
+						<td>RJAA</td>
+						<td>AMAMI Y574 SHIBK Y57 YULIA Y89 GUPER Y81 RUTAS</td>
+						<td> </td>
+						</tr>
+						</tbody></table>
 					<ul class="actions">
-						<li><a href="#" class="button">Flight Planned Routes</a></li>
+						<li><a href="https://1drv.ms/x/s!AsKQamqa_zaIal3o3S336W4hdfw?e=Gnu961" class="button">Flight Planned Routes</a></li>
 					</ul>
 					<h4>Some more useful links for flight planning:</h4>
-					<p><a href="https://aisjapan.mlit.go.jp/Login.do">eAIP Japan</a>: includes all the information about Japan's airspace</p>
-					<p><a href="https://www.ntrack.mlit.go.jp/">羽田空港飛行コースホームページについて</a>: shows the runways and approaches in use</p>
-					<p><a href="https://squawk.id/">Squawk.ID</a>: ran by VATSIM Japan Division (VATJPN) controllers; explains more about the Japanese airspace!</p>
-					<p>Lastly, <a href="fleet/en/index.html/">Our fleet list</a>: has the PBN capability, ModeS, Seat Configuration, and operation range information to enhance your experience</p>
-					
-					
+					<a href="https://aisjapan.mlit.go.jp/Login.do">eAIP Japan</a>: includes all the information about Japan's airspace
+					<br><a href="https://www.ntrack.mlit.go.jp/">羽田空港飛行コースホームページについて</a>: shows the runways and approaches in use
+					<br><a href="https://squawk.id/">Squawk.ID</a>: ran by VATSIM Japan Division (VATJPN) controllers; explains more about the Japanese airspace!
+					<br>Lastly, <a href="fleet/en/index.html/">Our fleet list</a>: has the PBN capability, ModeS, Seat Configuration, and operation range information to enhance your experience.
 				</div>
 			</section>
 
@@ -73,6 +692,18 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#fpr').DataTable( {
+						"scrollX": true,
+						"pageLength": 5,
+						"lengthChange": false, 
+						"fixedHeader": true
+					} );
+				} );
+			</script>
 
 	</body>
 </html>
