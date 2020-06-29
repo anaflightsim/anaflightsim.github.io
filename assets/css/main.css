@@ -2830,6 +2830,29 @@
 					}
 
 				}
+				
+		.wrapper.style7 {
+			background-attachment: fixed;
+			background-image: url("../../assets/css/images/overlayb.png"), url("../../images/link.jpg");
+			background-position: center bottom;
+			background-size: cover;
+		}
+
+			.wrapper.style7 header.major {
+				margin-bottom: 1em;
+			}
+
+				.wrapper.style7 header.major h2 {
+					color: #ffffff;
+				}
+
+				@media screen and (max-width: 1280px) {
+
+					.wrapper.style7 header.major {
+						margin-bottom: 2em;
+					}
+
+				}
 
 		@media screen and (max-width: 980px) {
 
