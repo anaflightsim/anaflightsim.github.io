@@ -11,6 +11,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+		<style>
+			th, td { white-space: nowrap; }
+			div.dataTables_wrapper {
+				margin: 0 auto;
+			}
+		 
+			div.container {
+				width: 80%;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -1024,11 +1034,13 @@
 			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
-					$('#32g').DataTable( {
-						"scrollX": true,
-						"pageLength": 5,
-						"lengthChange": false, 
-						"fixedHeader": true, 
+					var table = $('#32g').removeAttr('width').DataTable( {
+						scrollY:        true,
+						scrollX:        true,
+						columnDefs: [
+							{ width: 50, targets: 0 }
+						],
+						fixedHeader: true, 						
 						dom: 'Bfrtip',
 						buttons: [
 							'excelHtml5'
@@ -1036,11 +1048,13 @@
 					} );
 				} );
 				$(document).ready(function() {
-					$('#32p').DataTable( {
-						"scrollX": true,
-						"pageLength": 5,
-						"lengthChange": false, 
-						"fixedHeader": true, 
+					var table = $('#32p').removeAttr('width').DataTable( {
+						scrollY:        true,
+						scrollX:        true,
+						columnDefs: [
+							{ width: 50, targets: 0 }
+						],
+						fixedHeader: true, 						
 						dom: 'Bfrtip',
 						buttons: [
 							'excelHtml5'
@@ -1048,11 +1062,13 @@
 					} );
 				} );
 				$(document).ready(function() {
-					$('#321').DataTable( {
-						"scrollX": true,
-						"pageLength": 5,
-						"lengthChange": false, 
-						"fixedHeader": true, 
+					var table = $('#321').removeAttr('width').DataTable( {
+						scrollY:        true,
+						scrollX:        true,
+						columnDefs: [
+							{ width: 50, targets: 0 }
+						],
+						fixedHeader: true, 						
 						dom: 'Bfrtip',
 						buttons: [
 							'excelHtml5'

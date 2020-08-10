@@ -11,6 +11,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+		<style>
+			th, td { white-space: nowrap; }
+			div.dataTables_wrapper {
+				margin: 0 auto;
+			}
+		 
+			div.container {
+				width: 80%;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -81,7 +91,7 @@
 					<td align="right">1781</td>
 					<td>n/a</td>
 					<td>8404F4</td>
-					<td>JRBP</td>
+					<td><s>JRBP</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -101,7 +111,7 @@
 					<td align="right">1850</td>
 					<td>n/a</td>
 					<td>840888</td>
-					<td>JRKS</td>
+					<td><s>JRKS</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -121,7 +131,7 @@
 					<td align="right">1871</td>
 					<td>n/a</td>
 					<td>840C1C</td>
-					<td>KMGP</td>
+					<td><s>KMGP</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -141,7 +151,7 @@
 					<td align="right">1890</td>
 					<td>n/a</td>
 					<td>840FB0</td>
-					<td>KSCE</td>
+					<td><s>KSCE</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -161,7 +171,7 @@
 					<td align="right">1971</td>
 					<td>n/a</td>
 					<td>841344</td>
-					<td>LRBP</td>
+					<td><s>LRBP</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -181,7 +191,7 @@
 					<td align="right">1992</td>
 					<td>n/a</td>
 					<td>8416D8</td>
-					<td>LRCJ</td>
+					<td><s>LRCJ</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -201,7 +211,7 @@
 					<td align="right">2513</td>
 					<td>n/a</td>
 					<td>847434</td>
-					<td>CQES</td>
+					<td><s>CQES</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -221,7 +231,7 @@
 					<td align="right">2582</td>
 					<td>n/a</td>
 					<td>8477C8</td>
-					<td>BDMS</td>
+					<td><s>BDMS</s></td>
 					<td>B1C1D1O1S2T1</td>
 					<td> </td>
 					<td> </td>
@@ -1053,22 +1063,39 @@
 			<script src="../../assets/js/util.js"></script>
 			<script src="../../assets/js/main.js"></script>
 			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.js"></script>
-			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
 			<script type="text/javascript">
 				$(document).ready(function() {
-					$('#737').DataTable( {
-						"scrollX": true,
-						"pageLength": 5,
-						"lengthChange": false, 
-						"fixedHeader": true
+					var table = $('#737').removeAttr('width').DataTable( {
+						scrollY:        true,
+						scrollX:        true,
+						columnDefs: [
+							{ width: 50, targets: 0 }
+						],
+						fixedHeader: true, 						
+						dom: 'Bfrtip',
+						buttons: [
+							'excelHtml5'
+						]
 					} );
 				} );
 				$(document).ready(function() {
-					$('#738').DataTable( {
-						"scrollX": true,
-						"pageLength": 5,
-						"lengthChange": false, 
-						"fixedHeader": true
+					var table = $('#738').removeAttr('width').DataTable( {
+						scrollY:        true,
+						scrollX:        true,
+						columnDefs: [
+							{ width: 50, targets: 0 }
+						],
+						fixedHeader: true, 						
+						dom: 'Bfrtip',
+						buttons: [
+							'excelHtml5'
+						]
 					} );
 				} );
 			</script>
