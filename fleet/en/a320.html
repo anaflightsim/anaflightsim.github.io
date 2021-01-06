@@ -139,92 +139,6 @@
 						<td>Previously Vanilla Air. </td>
 						</tr>
 						</tbody></table>
-						
-					<br></br>
-					<h4> Airbus A320-271N ~Domestic: 32P(ANA); Intl: 320(ANA)~</h4>
-					<table id="32p" class="display" cellspacing="0" width="100%">
-					<h4><j>Airbus A320-214 ~国内線: 32G(ANA)~<j></h4>
-					<table id="32g" class="display" cellspacing="0" width="100%">
-					<thead><tr><th title="Field #1">登録記号</th>
-					<th title="Field #2">OPR</th>
-					<th title="Field #3">運用</th>
-					<th title="Field #4">定置</th>
-					<th title="Field #5">座席</th>
-					<th title="Field #6">機種</th>
-					<th title="Field #7">エンジン</th>
-					<th title="Field #8">製造</th>
-					<th title="Field #9">cn</th>
-					<th title="Field #10">ln</th>
-					<th title="Field #11">MSN</th>
-					<th title="Field #12">ModeS</th>
-					<th title="Field #13">SelCal</th>
-					<th title="Field #14">PBN</th>
-					<th title="Field #15">Extra NAV</th>
-					<th title="Field #16">SUR</th>
-					<th title="Field #17">塗装</th>
-					<th title="Field #18">備考</th>
-					</tr></thead>
-					<tbody><tr>
-					<td>JA01VA</td>
-					<td>ANA</td>
-					<td>国内</td>
-					<td>成田</td>
-					<td>Y180</td>
-					<td>Airbus A320-214</td>
-					<td>CFM56-5B4/P</td>
-					<td align="right">2013</td>
-					<td>n/a</td>
-					<td>n/a</td>
-					<td align="right">5844</td>
-					<td>8406B0</td>
-					<td>CMES</td>
-					<td>A1B1C1D1O1S2</td>
-					<td> </td>
-					<td> </td>
-					<td>標準塗装</td>
-					<td>元 Vanilla Air. </td>
-					</tr>
-					<tr>
-					<td>JA02VA</td>
-					<td>ANA</td>
-					<td>国内</td>
-					<td>成田</td>
-					<td>Y180</td>
-					<td>Airbus A320-214</td>
-					<td>CFM56-5B4/P</td>
-					<td align="right">2013</td>
-					<td>n/a</td>
-					<td>n/a</td>
-					<td align="right">5901</td>
-					<td>840A44</td>
-					<td>CPBM</td>
-					<td>A1B1C1D1O1S2</td>
-					<td> </td>
-					<td> </td>
-					<td>標準塗装</td>
-					<td>元 Vanilla Air. </td>
-					</tr>
-					<tr>
-					<td>JA03VA</td>
-					<td>ANA</td>
-					<td>国内</td>
-					<td>成田</td>
-					<td>Y180</td>
-					<td>Airbus A320-214</td>
-					<td>CFM56-5B4/P</td>
-					<td align="right">2013</td>
-					<td>n/a</td>
-					<td>n/a</td>
-					<td align="right">5926</td>
-					<td>840DD8</td>
-					<td>CPEJ</td>
-					<td>A1B1C1D1O1S2</td>
-					<td> </td>
-					<td> </td>
-					<td>標準塗装</td>
-					<td>元 Vanilla Air. </td>
-					</tr>
-					</tbody></table>
 					
 					<br></br>
 					<h4> A320-271N ~国内線: 32P(ANA); 国際線: 320(ANA)~</h4>
@@ -1112,8 +1026,9 @@
 			<script src="../../assets/js/skel.min.js"></script>
 			<script src="../../assets/js/util.js"></script>
 			<script src="../../assets/js/main.js"></script>
-			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.js"></script>
-			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js"></script>
 			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
 			<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
 			<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
@@ -1131,7 +1046,11 @@
 						dom: 'Bfrtip',
 						buttons: [
 							'excelHtml5'
-						]
+						], 
+						fixedColumns: {
+							leftColumns: 1,
+							rightColumns: 0
+						}
 					} );
 				} );
 				$(document).ready(function() {
@@ -1145,7 +1064,11 @@
 						dom: 'Bfrtip',
 						buttons: [
 							'excelHtml5'
-						]
+						], 
+						fixedColumns: {
+							leftColumns: 1,
+							rightColumns: 0
+						}
 					} );
 				} );
 				$(document).ready(function() {
@@ -1155,11 +1078,15 @@
 						columnDefs: [
 							{ width: 50, targets: 0 }
 						],
-						fixedHeader: true, 						
+						fixedHeader: true, 				
 						dom: 'Bfrtip',
 						buttons: [
 							'excelHtml5'
-						]
+						], 
+						fixedColumns: {
+							leftColumns: 1,
+							rightColumns: 0
+						}
 					} );
 				} );
 			</script>
