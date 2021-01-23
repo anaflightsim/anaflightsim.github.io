@@ -1,5 +1,13 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-<script type="text/javascript">
-    window.location.href = "https://anaflightsim.github.io/index_en.html";
+<script> 
+ !function () {
+  var lang = navigator.language||navigator.userLanguage;
+  lang = lang.substr(0, 2);
+  if(lang == 'jp'){
+	  window.location.replace('index_jp.html')
+  }else{
+	  window.location.replace('index_en.html')
+  }
+}()
 </script>
