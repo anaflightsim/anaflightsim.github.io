@@ -57,7 +57,10 @@ function eraseCookie(name) {
 
 function cookieConsent() {
   if (!getCookie('purecookieDismiss')) {
-    document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + '</a></div></div>';
+    var cookieDiv = document.createElement(‘div’);
+cookieDiv.id = ‘menu’;
+cookieDiv.innerHTML = ””;
+document.body.appendChild(cookieDiv);
 	pureFadeIn("cookieConsentContainer");
   }
 }
