@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<meta name="title" content="Flight Planned Route">
+		<meta name="description" content="Flight Planned Route for Japan.">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<title>Flight Planned Route</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/cookie.css" />
+		<script src="assets/js/purecookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index_en.html"><img src="images/ana logo blue.png" height="20"> FlightSim Web</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index_en.html">Home</a></li>
+						<li><a href="repscene/en/index.html">Repaints/Scenery</a></li>
+						<li><a href="fleet/en/index.html">Fleet List</a></li>
+						<li><a href="fpr_en.html">Flight Planned Routes</a></li>
+						<li><a href="en/link.html">Links</a></li>
+						<li><strong><a href="fpr_jp.html"><j><img src="images/jflag.png" height="15">日本語</j></a></strong></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="four" class="wrapper style4 major">
+					<div class="container">
+						<header class="major">
+							<h2>Flight Planned Routes</h2>
+						</header>
+						</ul>
+					</div>
+				</section>
+			<section id="main" class="wrapper">
+				<div class="container">
+					<p>In development 作業中 </p>
+					
+					<h4>Some more useful links for flight planning:</h4>
+					<a href="https://aisjapan.mlit.go.jp/Login.do">eAIP Japan</a>: includes all the information about Japan's airspace
+					<br>Check AIC 052/20 for flight planned routes</br>
+					<br><a href="https://www.ntrack.mlit.go.jp/">羽田空港飛行コースホームページについて</a>: a site showing the runways and approaches in use for Haneda airport</br>
+					<br><a href="https://squawk.id/">Squawk.ID</a>: a site ran by VATSIM Japan Division (VATJPN) controllers; explains more about the Japanese airspace!</br>
+					<br>Lastly, <a href="fleet/en/index.html">Our fleet list</a>: has the PBN capability, ModeS, Seat Configuration, and operation range information to enhance your experience.</br>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<b>Not affiliated with ANA in real life. Flight Simulation Only.</b>
+						<li>© 2020 ANA7875</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#fpr').DataTable( {
+						"scrollX": true,
+						"pageLength": 5,
+						"lengthChange": false, 
+						"fixedHeader": true
+					} );
+				} );
+			</script>
+
+	</body>
+</html>
